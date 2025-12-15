@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    @apply max-w-7xl mx-auto px-4;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom button styles */
+.btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md shadow-md transition duration-300;
+}
+
+/* Card hover effect */
+.card-hover {
+    @apply transition duration-300 transform hover:-translate-y-1 hover:shadow-md;
+}
+
+/* Responsive typography */
+h1 {
+    @apply text-3xl md:text-4xl font-bold;
+}
+
+h2 {
+    @apply text-2xl md:text-3xl font-bold;
+}
+
+h3 {
+    @apply text-xl font-semibold;
+}
+
+/* Section spacing */
+section {
+    @apply py-16;
+}
+
+/* Custom border radius */
+.rounded-lg {
+    border-radius: 12px;
+}
+
+/* Custom shadows */
+.shadow-sm {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
